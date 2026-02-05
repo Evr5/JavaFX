@@ -1,2 +1,2 @@
-# javafx
+# JavaFX
 My JavaFX training repo
