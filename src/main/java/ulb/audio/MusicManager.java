@@ -14,8 +14,6 @@ public final class MusicManager {
     private static double volume = 0.1;
     private static Timeline transition;
 
-    private MusicManager() {}
-
     public static double getVolume() {
         return volume;
     }
