@@ -30,14 +30,7 @@ public final class MusicManager {
     public static void playLoop(String resourcePath) {
         stop();
 
-        String path = resourcePath;
-        if (path.startsWith("res/")) path = path.substring("res/".length());
-        if (!path.startsWith("/")) path = "/" + path;
-
-        URL url = MusicManager.class.getResource(path);
-        if (url == null) {
-            throw new IllegalArgumentException("Ressource introuvable: " + path);
-        }
+        URL url = MusicManager.class.getResource(resourcePath);
 
         Media media = new Media(url.toExternalForm());
         current = new MediaPlayer(media);
@@ -108,14 +101,7 @@ public final class MusicManager {
     }
 
     private static MediaPlayer buildLoopPlayer(String resourcePath) {
-        String path = resourcePath;
-        if (path.startsWith("res/")) path = path.substring("res/".length());
-        if (!path.startsWith("/")) path = "/" + path;
-
-        URL url = MusicManager.class.getResource(path);
-        if (url == null) {
-            throw new IllegalArgumentException("Ressource introuvable: " + path);
-        }
+        URL url = MusicManager.class.getResource(resourcePath);
 
         Media media = new Media(url.toExternalForm());
         MediaPlayer player = new MediaPlayer(media);
