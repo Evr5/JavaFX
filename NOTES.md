@@ -38,3 +38,21 @@ public class Main extends Application {
 ## Architecture de JavaFX
 
 ![architecture-javafx](./res/arch.png)
+
+**Scene Graph** : un peu comme des widgets (bouton, tableau, etc) mais représenté sous forme de graphe. Pratique pour avoir une hiérarchie. On peut appliquer une propriété à un noeud parent et cela s'appliquera à tous les noeuds enfants.
+
+## Scene
+
+Classe de JavaFX qui contient tout le contenu principal qui sera dans la fenêtre.
+
+```java
+import javafx.scene.Scene;
+```
+
+## StageStyle
+
+Classe de JavaFX qui permet de modifier le style de la fenêtre (Stage).
+
+```java
+import javafx.stage.StageStyle;
+```
