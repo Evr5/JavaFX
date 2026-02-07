@@ -31,7 +31,7 @@ public class MainMenu extends VBox {
                         100, 100,
                         true, true,
                         false,
-                        true // cover => "zoom" pour remplir en fullscreen
+                        true
                 )
         )));
 
